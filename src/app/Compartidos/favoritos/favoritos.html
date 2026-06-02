@@ -1,1 +1,108 @@
-<p>favoritos works!</p>
+<!-- <div class="container mt-4">
+
+    @if(favoritos.length === 0){
+
+    <div class="row">
+
+        @for(p of favoritos; track p.id){
+
+        <div class="col-md-4">
+
+            <div class="card mb-3">
+
+                <img [src]="p.imagen" class="card-img-top">
+
+                <div class="card-body">
+
+                    <h5>{{p.nombre}}</h5>
+
+                    <p>${{p.precio}}</p>
+
+                    <button
+                    class="btn btn-danger"
+                    (click)="eliminarFavorito(p.id)">
+
+                        Eliminar
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        }
+
+    </div>
+
+    }@else{
+
+    <div class="sin-favoritos">
+
+        <h2>No tienes productos favoritos</h2>
+
+        <p>
+            Agrega productos a tus favoritos
+            para verlos aquí.
+        </p>
+
+    </div>
+
+    }
+
+</div> -->
+
+<div class="container mt-4">
+
+  <div class="row">
+
+    @for(p of favoritos; track p.id){
+
+      <div class="col-md-4">
+
+        <div class="card mb-3">
+
+          <img
+          [src]="p.imagen"
+          class="card-img-top">
+
+          <div class="card-body">
+
+            <h5>{{p.nombre}}</h5>
+
+            <p>${{p.precio}}</p>
+
+            <button
+            class="btn btn-danger"
+            (click)="eliminarFavorito(p.id)">
+
+              Eliminar
+
+            </button>
+
+            <div>
+
+              <button
+            class="btn btn-success"
+            (click)="ComprarProducto(p)">
+
+              Comprar
+
+            </button>
+
+            </div>
+
+            
+
+          </div>
+
+        </div>
+
+      </div>
+
+    }
+
+  </div>
+
+</div>

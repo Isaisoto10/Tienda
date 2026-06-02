@@ -1,0 +1,101 @@
+/* 1. Fondo y contenedor (opcional para centrarlo en la página) */
+body {
+  background-color: #f0f2f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px;
+}
+
+form.row {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Sombra suave */
+  max-width: 800px;
+  margin: 0 auto; /* Centra el formulario */
+}
+
+/* 2. Estilo de las etiquetas (Labels) */
+.form-label {
+  font-weight: 600;
+  color: #4a5568;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* 3. Estilo de los inputs, selects y textareas */
+.form-control, 
+.form-select {
+  border: 2px solid #edf2f7;
+  border-radius: 10px;
+  padding: 12px 15px;
+  background-color: #f8fafc;
+  transition: all 0.3s ease;
+  color: #2d3748;
+}
+
+/* Efecto al hacer clic o focus */
+.form-control:focus, 
+.form-select:focus {
+  background-color: #ffffff;
+  border-color: #4299e1; /* Azul moderno */
+  box-shadow: 0 0 0 4px rgba(66, 153, 225, 0.15);
+  outline: none;
+}
+
+/* 4. Estilo del Checkbox */
+.form-check-input {
+  width: 1.2em;
+  height: 1.2em;
+  margin-top: 0.25em;
+  border: 2px solid #cbd5e0;
+  cursor: pointer;
+}
+
+.form-check-input:checked {
+  background-color: #4299e1;
+  border-color: #4299e1;
+}
+
+.form-check-label {
+  color: #718096;
+  font-size: 0.95rem;
+  cursor: pointer;
+  padding-left: 5px;
+}
+
+/* 5. Botón principal (Sign in) */
+.btn-primary {
+  background: linear-gradient(135deg, #4299e1 0%, #3182ce 100%);
+  border: none;
+  border-radius: 10px;
+  padding: 12px 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  width: 100%; /* El botón ocupa todo el ancho en móviles */
+}
+
+@media (min-width: 768px) {
+  .btn-primary {
+    width: auto; /* El botón vuelve a su tamaño original en escritorio */
+  }
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(66, 153, 225, 0.4);
+  background: linear-gradient(135deg, #3182ce 0%, #2b6cb0 100%);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+/* 6. Placeholder */
+::placeholder {
+  color: #a0aec0 !important;
+  font-size: 0.9rem;
+}

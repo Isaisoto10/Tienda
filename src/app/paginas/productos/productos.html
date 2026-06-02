@@ -1,1 +1,12 @@
-<p>productos works!</p>
+@for(p of Productos ; track p.id){
+@if(p.disponible){
+<div class="card" style="width: 18rem;">
+  <img src="{{p.imagen}}" class="card-img-top" alt="...">
+  <h5 class="card-title">{{p.nombre}}</h5>
+  <p class="card-text">${{p.precio}}</p>
+   <button class="btn btn-primary" (click)="agregarAlCarrito(p)">Comprar</button>
+   <button class="btn btn-secondary" (click)="agregarAFavoritos(p)">☆</button>
+  </div>
+ 
+}
+}

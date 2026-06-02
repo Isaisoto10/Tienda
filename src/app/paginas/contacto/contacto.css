@@ -1,0 +1,76 @@
+.contacto-wrapper {
+  background-color: #fcfcfc;
+  min-height: 80vh;
+}
+
+/* Caja de información (Izquierda) */
+.info-contacto {
+  background: #f8f9fa;
+  border-radius: 20px;
+}
+
+.icon-box {
+  width: 50px;
+  height: 50px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  font-size: 1.5rem;
+}
+
+/* Caja del Formulario (Derecha) */
+.form-contacto {
+  border: 1px solid #f0f0f0;
+}
+
+/* Estilo de los inputs (siguiendo tu línea) */
+.form-control, .form-select {
+  border: 1px solid #e0e0e0;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  background-color: #fbfbfb;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  background-color: #fff;
+  border-color: #3182ce;
+  box-shadow: 0 0 0 4px rgba(49, 130, 206, 0.1);
+}
+
+/* Botón con el gradiente que ya usamos */
+.btn-primary {
+  background: linear-gradient(135deg, #4299e1 0%, #3182ce 100%);
+  border: none;
+  transition: transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+  box-shadow: 0 10px 20px rgba(49, 130, 206, 0.2);
+}
+
+/* Redes sociales */
+.social-links a {
+  text-decoration: none;
+  color: #3182ce;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #2c5282;
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 991px) {
+  .info-contacto {
+    margin-bottom: 30px;
+    height: auto !important;
+  }
+}

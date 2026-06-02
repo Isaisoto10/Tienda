@@ -1,0 +1,78 @@
+/* Fondo personalizado con un ligero degradado oscuro */
+.bg-dark-custom {
+  background: linear-gradient(90deg, #0f0f0f 0%, #1a1a1a 100%);
+  border-bottom: 2px solid #0d6efd; /* Línea neón azul inferior */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo de los enlaces del menú */
+.navbar-nav .nav-link {
+  color: #e0e0e0 !important;
+  font-weight: 500;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+}
+
+/* Efecto Hover: Brillo azul y subrayado */
+.navbar-nav .nav-link:hover {
+  color: #0dcaf0 !important; /* Color cyan tipo LED */
+  text-shadow: 0 0 8px rgba(13, 202, 240, 0.6);
+}
+
+/* Estilo para el link activo */
+.navbar-nav .nav-link.active {
+  color: #0d6efd !important;
+  border-bottom: 2px solid #0d6efd;
+}
+
+/* Dropdown (Menú desplegable) estilo oscuro */
+.dropdown-menu {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+}
+
+.dropdown-item {
+  color: #ccc;
+  transition: background 0.2s;
+}
+
+.dropdown-item:hover {
+  background-color: #0d6efd;
+  color: white;
+}
+
+/* Botón de búsqueda personalizado */
+.btn-outline-success {
+  color: #0dcaf0;
+  border-color: #0dcaf0;
+}
+
+.btn-outline-success:hover {
+  background-color: #0dcaf0;
+  color: #000;
+  box-shadow: 0 0 10px rgba(13, 202, 240, 0.5);
+}
+
+/* Input de búsqueda oscuro */
+.form-control {
+  background-color: #2b2b2b;
+  border: 1px solid #444;
+  color: white;
+}
+
+.form-control:focus {
+  background-color: #333;
+  color: white;
+  border-color: #0dcaf0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 202, 240, 0.25);
+}
+
+/* Logo / Nombre de la marca */
+.navbar-brand {
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #0d6efd !important;
+}
